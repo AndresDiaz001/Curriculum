@@ -1,5 +1,7 @@
 :root{
     --verdeagua: rgb(39,219,180);
+    --azulfondo: rgb(2,55,71);
+    --azulhover: rgb(44, 134, 156);
 }
 
 *{
@@ -13,12 +15,12 @@ h3{font-size: 2em;}
 p{font-size: 1.25em;}
 
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
 
-.color-acento{ color: rgb(39, 219, 180); }
+.color-acento{ color: var(--verdeagua); }
 
 ul{ list-style: none;}
 
@@ -28,7 +30,7 @@ display: inline;
 
 button{
     border-top-style: groove;
-    background-color: rgb(39, 219, 180);
+    background-color: var(--verdeagua);
     font-size: 1em;
     font-weight: bold;
     padding: 10px 20px;
@@ -40,8 +42,8 @@ button{
 }
 
 button:hover{
-    background-color: rgb(241, 6, 6);
-    color: black;
+    background-color: var(--azulhover);
+    color: rgb(0, 0, 0);
     
 }
 .container{
@@ -49,14 +51,18 @@ button:hover{
     margin: auto;
 }
 header{
-    background-color: rgb(245, 245, 245);
+    background-color: var(--azulfondo);
+    border-radius: 5px;
+    background-image: linear-gradient(0deg) ,url(media/hero.jpg); 
 }
 header .logo{
     margin: 0;
     padding: 25px 30px;
     font-weight: bold;
-    color: rgb(39, 219, 180);
-    font-size: 1.8em;
+    color: rgb(255, 255, 255);
+    font-size: 1.8em; 
+    text-decoration-style: dotted;
+    text-shadow: 0.25em 0.1em 0.25em rgb(0, 0, 0);
     
 }
 
@@ -64,6 +70,15 @@ header .container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    /*background-color: rgba(4, 220, 248, 0.726);*/
+    border-radius: 5px;
+    text-decoration-style: dotted;
+    text-shadow: 0.25em 0.1em 0.25em rgb(0, 0, 0);
+    
+}
+
+header p{
+    border-radius: 1px;
 }
 
 header nav{
@@ -77,11 +92,11 @@ header a{
     padding: 5px 12px;
     text-decoration: none;
     font-weight: bold;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 header a:hover{
-    color: rgb(39, 219, 180);
+    color: var(--azulhover);
 }
 
 #hero{
@@ -91,7 +106,6 @@ header a:hover{
     text-align: center;
     flex-direction: column;
     height: 120vh;
-    /*width: 115vh;*/
     color: rgb(242, 243, 245);
     background-image:linear-gradient(
         0deg,
@@ -124,15 +138,26 @@ header a:hover{
     text-align: center;
     padding: 200px 12px;
     color: black;
-    background-color: rgb(254, 255, 255);
+    background-color: var(--azulfondo);
+    border-radius: 8px;
+    text-decoration-style: dotted;
+    text-shadow: 0.25em 0.1em 0.25em rgb(0, 0, 0);
+}
+#Perfil-Profesional h2{
+    color: rgb(255, 255, 255);
 }
 
+#Perfil-Profesional p{
+    color: rgb(255, 255, 255);
+    text-decoration-style: dotted;
+    text-shadow: 0.25em 0.1em 0.25em rgb(0, 0, 0);
+}
 #Experiencia{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 90vh;
+    height: 80vh;
     color: rgb(255, 255, 255);
     background-image: linear-gradient(
         0deg,
@@ -155,32 +180,37 @@ header a:hover{
 #software {
     text-align: center;
     padding: 200px 12px;
-    color: black;
-    background-color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
+    background-color: var(--azulfondo);
     font-weight: bold;
+    height: 65vh;
     font-size: 1,8em;
     display: flex;
     flex-direction: column;
+    text-decoration-style: dotted;
+    text-shadow: 0.25em 0.1em 0.25em rgb(0, 0, 0);
+    border-radius: 8px;
 }
 
 #habilidades {
     padding: 200px 12px;
-    color: rgb(254, 255, 255);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    height: 60vh;
     background-image: linear-gradient(
         0deg,
         rgb(0,0,0,0.9),
-        rgb(0,0,0,1)
+        rgb(0,0,0,5)
     ),url(media/skill.png);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 8px;
+    
 }
 
 #lista-contacto ul{
@@ -195,6 +225,9 @@ header a:hover{
     text-align: center;
     justify-content: center;
     height: 22vh;
+    color: aliceblue;
+    text-decoration-style: dotted;
+    text-shadow: 0.5em 0.1em 0.97em rgb(255, 255, 255);
 }
 
 
@@ -205,4 +238,5 @@ footer {
 
 footer p{
     text-align: center;
+    color: rgb(255, 255, 255);
 }
