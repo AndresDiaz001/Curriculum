@@ -1,2 +1,2 @@
 # Curriculum
-Página de presentación de quien soy
+this is the presentation page of my curriculum vitae.
